@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div#root {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #00f260;
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260);
+  background: linear-gradient(to right, #0575e6, #00f260);
+
+  background-size: 200% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
