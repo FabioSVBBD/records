@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 15px;
+  border: 10px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Add a thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(248 250 252 / 0.5);
+  border-radius: 1rem;
+  border-radius: 15px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,4 +1,4 @@
-import { Button } from '../components';
+import { Button, DatePicker } from '../components';
 import { useAuth0 } from '@auth0/auth0-react';
 
 export const Home = () => {
@@ -29,7 +29,7 @@ export const Home = () => {
         <h1 className="text-3xl text-center">Hi {user.name}!</h1>
       )}
 
-      <section className="flex items-center pt-8 flex-col">
+      <section className="flex items-center py-8 flex-col">
         <h4>Columns will go here</h4>
         <ol className="list-decimal">
           <li>Date</li>
@@ -37,6 +37,8 @@ export const Home = () => {
           <li>Deposit</li>
         </ol>
       </section>
+
+      <DatePicker />
     </article>
   );
 };
