@@ -6,7 +6,9 @@ export const Home = () => {
     useAuth0();
 
   const logInOrOutClicked = () =>
-    isAuthenticated ? logout() : loginWithRedirect();
+    isAuthenticated
+      ? logout({ returnTo: window.location.origin })
+      : loginWithRedirect();
 
   return (
     <article>
