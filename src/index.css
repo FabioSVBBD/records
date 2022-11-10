@@ -60,3 +60,8 @@ div#root {
     background-position: 0% 50%;
   }
 }
+
+.modal-fix {
+  position: fixed;
+  width: 100%;
+}
