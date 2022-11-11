@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Input, Modal, Transaction } from 'src/components';
-import { useTransaction } from 'src/hooks';
+import { Button, Input, Modal, Transaction } from '~/components';
+import { useTransaction } from '~/hooks';
 
 export const Home = () => {
   const [showModal, setShowModal] = useState(false);

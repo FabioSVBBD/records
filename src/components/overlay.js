@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'proptypes';
-import { useNoScroll } from 'src/hooks';
+import { useNoScroll } from '~/hooks';
 
 export const Overlay = ({ visible, children }) => {
   useNoScroll(visible);

@@ -6,9 +6,7 @@ import fs from 'fs/promises';
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
-    alias: {
-      src: resolve(__dirname, 'src'),
-    },
+    alias: [{ find: '~', replacement: resolve(__dirname, 'src') }],
   },
   esbuild: {
     loader: 'jsx',

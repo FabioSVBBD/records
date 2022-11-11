@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { TransactionService } from 'src/services';
+import { TransactionService } from '~/services';
 
 export const useTransaction = ({ user, id = '' }) => {
   const [transactions, setTransactions] = useState({});
