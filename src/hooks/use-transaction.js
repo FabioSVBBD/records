@@ -8,9 +8,7 @@ export const useTransaction = ({ user, id = '' }) => {
     const controller = new AbortController();
 
     (async () => {
-      const response = await (
-        await TransactionService.getTransactions({ user: user, id, controller })
-      ).json();
+      const response = await (await TransactionService.getTransactions({ user, id, controller })).json();
 
       if (response.value) {
         setTransactions(response.value);
@@ -18,7 +16,7 @@ export const useTransaction = ({ user, id = '' }) => {
     })().catch(console.error);
 
     return () => controller.abort();
-  }, []);
+  }, [user, id]);
 
   return [transactions, setTransactions];
 };

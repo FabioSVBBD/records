@@ -1,10 +1,8 @@
-const baseUrl = 'https://localhost:7291';
+const baseUrl = 'https://localhost:5001';
 
 export const TransactionService = {
   getTransactions: async ({ user, controller }) =>
-    await fetch(`${baseUrl}/${user}/transactions`, {
-      signal: controller.signal,
-    }),
+    await fetch(`${baseUrl}/${user}/transactions`, { signal: controller.signal }),
 
   addTransaction: async ({ user, transaction, controller }) =>
     await fetch(`${baseUrl}/${user}/transactions`, {

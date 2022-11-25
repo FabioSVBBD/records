@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export const useNoScroll = (visible) => {
+export const useNoScroll = visible => {
   useEffect(() => {
     const root = document.getElementById('root');
 

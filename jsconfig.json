@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
+		"jsx": "react",
     "paths": {
+      "~/*": ["src/*"],
       "$libs": ["src/libs"],
       "$libs/*": ["src/libs/*"]
     }
