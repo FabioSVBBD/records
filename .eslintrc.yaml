@@ -71,7 +71,6 @@ rules:
     - 2
     - always
     - ignoreConsecutiveComments: true
-  class-methods-use-this: 1
 
   complexity:
     - 2
@@ -289,7 +288,6 @@ rules:
   react/jsx-uses-react: 2
   react/button-has-type: 2
   react/default-props-match-prop-types: 2
-  react/destructuring-assignment: 1
   react/function-component-definition:
     - error
     - namedComponents: arrow-function

@@ -1,3 +1,4 @@
+export * from './error-boundary';
 export * from './button';
 export * from './transaction';
 export * from './overlay';
